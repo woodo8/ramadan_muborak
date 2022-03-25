@@ -1,0 +1,84 @@
+@-webkit-keyframes blink {
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  @keyframes blink {
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  .bruteforce {
+    background-color: #151515;
+    color: #eee;
+    position: absolute;
+    top: 300px;
+    font-family: "Share Tech Mono", monospace;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  .password {
+    width: 500px;
+    position: absolute;
+    top: 90px;
+    left: 40px;
+    /* transform: translate(0, -50%); */
+    font-size: 30px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+  }
+  
+  .granted {
+    position: absolute;
+    top: 30px;
+    left: 10px;
+    /* transform: translate(-50%, 50%); */
+    font-size: 16px;
+    color: green;
+    text-shadow: 2px 2px #00ff22;
+  }
+  
+  .info {
+    position: absolute;
+    top: 0;
+    left: 10px;
+    width: 350px;
+  }
+  .info p {
+    margin: 0;
+    width: 100%;
+  }
+  
+  .button {
+    background-color: #111;
+    border: solid 1px #888;
+    padding: 8px 25px;
+    font-size: 18px;
+    letter-spacing: 2px;
+    cursor: pointer;
+  }
+  
+  .rerun {
+    position: absolute;
+    top: 140px;
+    left: 10px;
+  }
+  
+  
+  .blink {
+    -webkit-animation: blink 0.8s steps(1, start) infinite alternate;
+            animation: blink 0.8s steps(1, start) infinite alternate;
+  }
